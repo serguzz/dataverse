@@ -1,0 +1,8 @@
+
+1.TODO: Run alembic start commands:
+# From backend/ folder
+alembic revision --autogenerate -m "init"
+alembic upgrade head
+
+2.TODO: 
+Add alembic to docker-compose.yml
