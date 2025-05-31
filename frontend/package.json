@@ -1,0 +1,32 @@
+{
+  "name": "dataverse-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.0.0"
+  },
+  "description": "Next.js Frontend for DataVerse project",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "dataverse",
+    "frontend",
+    "next",
+    "nextjs"
+  ],
+  "author": "Sergiy Brovchenko",
+  "license": "ISC"
+}

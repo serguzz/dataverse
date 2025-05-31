@@ -1,0 +1,6 @@
+{
+    "name": "dataverse",
+    "private": true,
+    "workspaces": ["frontend"]
+  }
+  
