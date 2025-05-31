@@ -2,17 +2,42 @@ version: '3.8'
 services:
   backend:
     build: ./backend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     ports:
       - "8000:8000"
     volumes:
       - ./backend:/app
     environment:
       - ENV=development
+    env_file:
+      - .env
+    depends_on:
+      - db
+
   frontend:
     build: ./frontend
+    command: npm run dev
     ports:
       - "3000:3000"
     volumes:
       - ./frontend:/app
     environment:
       - ENV=development
+    env_file:
+      - .env
+
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: dataverse
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  pgdata:
+
