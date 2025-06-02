@@ -30,7 +30,7 @@ A full-stack data platform combining a modern Next.js frontend and FastAPI backe
 ### Prerequisites
 
 - Docker & Docker Compose installed
-- Python 3.11+ (for local backend dev)
+- Python 3.12+ (for local backend dev)
 - Node.js 20+ (for local frontend dev)
 
 ### Running the project with Docker
