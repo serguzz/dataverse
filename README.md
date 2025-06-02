@@ -1,6 +1,7 @@
 # DataVerse
 
 A full-stack data platform combining a modern Next.js frontend and FastAPI backend designed for dataset marketplace and data-driven applications.
+Built for data scientists, data engineers, and data analysts on one side and data providers on the other side.
 
 ---
 
